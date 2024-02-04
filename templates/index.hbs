@@ -1,11 +1,508 @@
+<!-- Voici un exemple du parametre:
 
+[
+  {
+    id: 1011334,
+    name: '3-D Man',
+    description: '',
+    modified: '2014-04-29T14:18:17-0400',
+    thumbnail: {
+      path: 'http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784',
+      extension: 'jpg'
+    },
+    resourceURI: 'http://gateway.marvel.com/v1/public/characters/1011334',
+    comics: {
+      available: 12,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1011334/comics',
+      items: [Array],
+      returned: 12
+    },
+    series: {
+      available: 3,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1011334/series',
+      items: [Array],
+      returned: 3
+    },
+    stories: {
+      available: 21,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1011334/stories',
+      items: [Array],
+      returned: 20
+    },
+    events: {
+      available: 1,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1011334/events',
+      items: [Array],
+      returned: 1
+    },
+    urls: [ [Object], [Object], [Object] ],
+    imageUrl: 'http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg'
+  },
+  {
+    id: 1017100,
+    name: 'A-Bomb (HAS)',
+    description: "Rick Jones has been Hulk's best bud since day one, but now he's more than a friend...he's a teammate! Transformed by a Gamma energy explosion, A-Bomb's thick, armored skin is just as strong and powerful as it is blue. And when he curls into action, he uses it like a giant bowling ball of destruction! ",
+    modified: '2013-09-18T15:54:04-0400',
+    thumbnail: {
+      path: 'http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16',
+      extension: 'jpg'
+    },
+    resourceURI: 'http://gateway.marvel.com/v1/public/characters/1017100',
+    comics: {
+      available: 4,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1017100/comics',
+      items: [Array],
+      returned: 4
+    },
+    series: {
+      available: 2,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1017100/series',
+      items: [Array],
+      returned: 2
+    },
+    stories: {
+      available: 7,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1017100/stories',
+      items: [Array],
+      returned: 7
+    },
+    events: {
+      available: 0,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1017100/events',
+      items: [],
+      returned: 0
+    },
+    urls: [ [Object], [Object] ],
+    imageUrl: 'http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg'
+  },
+  {
+    id: 1009144,
+    name: 'A.I.M.',
+    description: 'AIM is a terrorist organization bent on destroying the world.',
+    modified: '2013-10-17T14:41:30-0400',
+    thumbnail: {
+      path: 'http://i.annihil.us/u/prod/marvel/i/mg/6/20/52602f21f29ec',
+      extension: 'jpg'
+    },
+    resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009144',
+    comics: {
+      available: 53,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009144/comics',
+      items: [Array],
+      returned: 20
+    },
+    series: {
+      available: 36,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009144/series',
+      items: [Array],
+      returned: 20
+    },
+    stories: {
+      available: 57,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009144/stories',
+      items: [Array],
+      returned: 20
+    },
+    events: {
+      available: 0,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009144/events',
+      items: [],
+      returned: 0
+    },
+    urls: [ [Object], [Object], [Object] ],
+    imageUrl: 'http://i.annihil.us/u/prod/marvel/i/mg/6/20/52602f21f29ec.jpg'
+  },
+  {
+    id: 1009146,
+    name: 'Abomination (Emil Blonsky)',
+    description: 'Formerly known as Emil Blonsky, a spy of Soviet Yugoslavian origin working for the KGB, the Abomination gained his powers after receiving a dose of gamma radiation similar to that which transformed Bruce Banner into the incredible Hulk.',
+    modified: '2012-03-20T12:32:12-0400',
+    thumbnail: {
+      path: 'http://i.annihil.us/u/prod/marvel/i/mg/9/50/4ce18691cbf04',
+      extension: 'jpg'
+    },
+    resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009146',
+    comics: {
+      available: 58,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009146/comics',
+      items: [Array],
+      returned: 20
+    },
+    series: {
+      available: 28,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009146/series',
+      items: [Array],
+      returned: 20
+    },
+    stories: {
+      available: 68,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009146/stories',
+      items: [Array],
+      returned: 20
+    },
+    events: {
+      available: 1,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009146/events',
+      items: [Array],
+      returned: 1
+    },
+    urls: [ [Object], [Object], [Object] ],
+    imageUrl: 'http://i.annihil.us/u/prod/marvel/i/mg/9/50/4ce18691cbf04.jpg'
+  },
+  {
+    id: 1009148,
+    name: 'Absorbing Man',
+    description: '',
+    modified: '2013-10-24T14:32:08-0400',
+    thumbnail: {
+      path: 'http://i.annihil.us/u/prod/marvel/i/mg/1/b0/5269678709fb7',
+      extension: 'jpg'
+    },
+    resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009148',
+    comics: {
+      available: 102,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009148/comics',
+      items: [Array],
+      returned: 20
+    },
+    series: {
+      available: 52,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009148/series',
+      items: [Array],
+      returned: 20
+    },
+    stories: {
+      available: 114,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009148/stories',
+      items: [Array],
+      returned: 20
+    },
+    events: {
+      available: 5,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009148/events',
+      items: [Array],
+      returned: 5
+    },
+    urls: [ [Object], [Object], [Object] ],
+    imageUrl: 'http://i.annihil.us/u/prod/marvel/i/mg/1/b0/5269678709fb7.jpg'
+  },
+  {
+    id: 1009149,
+    name: 'Abyss',
+    description: '',
+    modified: '2014-04-29T14:10:43-0400',
+    thumbnail: {
+      path: 'http://i.annihil.us/u/prod/marvel/i/mg/9/30/535feab462a64',
+      extension: 'jpg'
+    },
+    resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009149',
+    comics: {
+      available: 8,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009149/comics',
+      items: [Array],
+      returned: 8
+    },
+    series: {
+      available: 3,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009149/series',
+      items: [Array],
+      returned: 3
+    },
+    stories: {
+      available: 8,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009149/stories',
+      items: [Array],
+      returned: 8
+    },
+    events: {
+      available: 1,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009149/events',
+      items: [Array],
+      returned: 1
+    },
+    urls: [ [Object], [Object], [Object] ],
+    imageUrl: 'http://i.annihil.us/u/prod/marvel/i/mg/9/30/535feab462a64.jpg'
+  },
+  {
+    id: 1010903,
+    name: 'Abyss (Age of Apocalypse)',
+    description: '',
+    modified: '1969-12-31T19:00:00-0500',
+    thumbnail: {
+      path: 'http://i.annihil.us/u/prod/marvel/i/mg/3/80/4c00358ec7548',
+      extension: 'jpg'
+    },
+    resourceURI: 'http://gateway.marvel.com/v1/public/characters/1010903',
+    comics: {
+      available: 3,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1010903/comics',
+      items: [Array],
+      returned: 3
+    },
+    series: {
+      available: 3,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1010903/series',
+      items: [Array],
+      returned: 3
+    },
+    stories: {
+      available: 2,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1010903/stories',
+      items: [Array],
+      returned: 2
+    },
+    events: {
+      available: 1,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1010903/events',
+      items: [Array],
+      returned: 1
+    },
+    urls: [ [Object], [Object], [Object] ],
+    imageUrl: 'http://i.annihil.us/u/prod/marvel/i/mg/3/80/4c00358ec7548.jpg'
+  },
+  {
+    id: 1010354,
+    name: 'Adam Warlock',
+    description: 'Adam Warlock is an artificially created human who was born in a cocoon at a scientific complex called The Beehive.',
+    modified: '2013-08-07T13:49:06-0400',
+    thumbnail: {
+      path: 'http://i.annihil.us/u/prod/marvel/i/mg/a/f0/5202887448860',
+      extension: 'jpg'
+    },
+    resourceURI: 'http://gateway.marvel.com/v1/public/characters/1010354',
+    comics: {
+      available: 202,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1010354/comics',
+      items: [Array],
+      returned: 20
+    },
+    series: {
+      available: 89,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1010354/series',
+      items: [Array],
+      returned: 20
+    },
+    stories: {
+      available: 231,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1010354/stories',
+      items: [Array],
+      returned: 20
+    },
+    events: {
+      available: 8,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1010354/events',
+      items: [Array],
+      returned: 8
+    },
+    urls: [ [Object], [Object], [Object] ],
+    imageUrl: 'http://i.annihil.us/u/prod/marvel/i/mg/a/f0/5202887448860.jpg'
+  },
+  {
+    id: 1010846,
+    name: 'Aegis (Trey Rollins)',
+    description: '',
+    modified: '1969-12-31T19:00:00-0500',
+    thumbnail: {
+      path: 'http://i.annihil.us/u/prod/marvel/i/mg/5/e0/4c0035c9c425d',
+      extension: 'gif'
+    },
+    resourceURI: 'http://gateway.marvel.com/v1/public/characters/1010846',
+    comics: {
+      available: 0,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1010846/comics',
+      items: [],
+      returned: 0
+    },
+    series: {
+      available: 0,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1010846/series',
+      items: [],
+      returned: 0
+    },
+    stories: {
+      available: 0,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1010846/stories',
+      items: [],
+      returned: 0
+    },
+    events: {
+      available: 0,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1010846/events',
+      items: [],
+      returned: 0
+    },
+    urls: [ [Object], [Object], [Object] ],
+    imageUrl: 'http://i.annihil.us/u/prod/marvel/i/mg/5/e0/4c0035c9c425d.gif'
+  },
+  {
+    id: 1012717,
+    name: 'Agatha Harkness',
+    description: '',
+    modified: '2021-08-06T11:30:56-0400',
+    thumbnail: {
+      path: 'http://i.annihil.us/u/prod/marvel/i/mg/c/a0/4ce5a9bf70e19',
+      extension: 'jpg'
+    },
+    resourceURI: 'http://gateway.marvel.com/v1/public/characters/1012717',
+    comics: {
+      available: 23,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1012717/comics',
+      items: [Array],
+      returned: 20
+    },
+    series: {
+      available: 12,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1012717/series',
+      items: [Array],
+      returned: 12
+    },
+    stories: {
+      available: 28,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1012717/stories',
+      items: [Array],
+      returned: 20
+    },
+    events: {
+      available: 0,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1012717/events',
+      items: [],
+      returned: 0
+    },
+    urls: [ [Object], [Object], [Object] ],
+    imageUrl: 'http://i.annihil.us/u/prod/marvel/i/mg/c/a0/4ce5a9bf70e19.jpg'
+  },
+  {
+    id: 1011297,
+    name: 'Agent Brand',
+    description: '',
+    modified: '2013-10-24T13:09:30-0400',
+    thumbnail: {
+      path: 'http://i.annihil.us/u/prod/marvel/i/mg/4/60/52695285d6e7e',
+      extension: 'jpg'
+    },
+    resourceURI: 'http://gateway.marvel.com/v1/public/characters/1011297',
+    comics: {
+      available: 31,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1011297/comics',
+      items: [Array],
+      returned: 20
+    },
+    series: {
+      available: 8,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1011297/series',
+      items: [Array],
+      returned: 8
+    },
+    stories: {
+      available: 35,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1011297/stories',
+      items: [Array],
+      returned: 20
+    },
+    events: {
+      available: 0,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1011297/events',
+      items: [],
+      returned: 0
+    },
+    urls: [ [Object], [Object], [Object] ],
+    imageUrl: 'http://i.annihil.us/u/prod/marvel/i/mg/4/60/52695285d6e7e.jpg'
+  },
+  {
+    id: 1009150,
+    name: 'Agent Zero',
+    description: '',
+    modified: '1969-12-31T19:00:00-0500',
+    thumbnail: {
+      path: 'http://i.annihil.us/u/prod/marvel/i/mg/f/60/4c0042121d790',
+      extension: 'jpg'
+    },
+    resourceURI: 'http://gateway.marvel.com/v1/public/characters/1009150',
+    comics: {
+      available: 29,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009150/comics',
+      items: [Array],
+      returned: 20
+    },
+    series: {
+      available: 10,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009150/series',
+      items: [Array],
+      returned: 10
+    },
+    stories: {
+      available: 31,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009150/stories',
+      items: [Array],
+      returned: 20
+    },
+    events: {
+      available: 0,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1009150/events',
+      items: [],
+      returned: 0
+    },
+    urls: [ [Object], [Object], [Object] ],
+    imageUrl: 'http://i.annihil.us/u/prod/marvel/i/mg/f/60/4c0042121d790.jpg'
+  },
+  {
+    id: 1011198,
+    name: 'Agents of Atlas',
+    description: '',
+    modified: '2016-02-03T10:25:22-0500',
+    thumbnail: {
+      path: 'http://i.annihil.us/u/prod/marvel/i/mg/9/a0/4ce18a834b7f5',
+      extension: 'jpg'
+    },
+    resourceURI: 'http://gateway.marvel.com/v1/public/characters/1011198',
+    comics: {
+      available: 45,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1011198/comics',
+      items: [Array],
+      returned: 20
+    },
+    series: {
+      available: 13,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1011198/series',
+      items: [Array],
+      returned: 13
+    },
+    stories: {
+      available: 52,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1011198/stories',
+      items: [Array],
+      returned: 20
+    },
+    events: {
+      available: 1,
+      collectionURI: 'http://gateway.marvel.com/v1/public/characters/1011198/events',
+      items: [Array],
+      returned: 1
+    },
+    urls: [ [Object], [Object], [Object] ],
+    imageUrl: 'http://i.annihil.us/u/prod/marvel/i/mg/9/a0/4ce18a834b7f5.jpg'
+  }
+]
+
+-->
+
+{{> header}}
 <div class="container-fluid m-2 p-5 bg-primary text-center">
     <h1>Les Marvels</h1>
+    
+    <div class="row">
+        <ul>
+            {{#each data}}
+                <li>
+                    <img src={{this.imageUrl}} alt={{this.name}}>
+                    <h5>{{this.name}}</h5>
+                </li>
+            {{/each}}
+        </ul>
+    </div> 
 </div>
-<div class="container m-2 p-5 bg-primary  text-center">
-    <h2>Mes comics</h2>
 
-</div>
+{{> footer}}
 
 
 
